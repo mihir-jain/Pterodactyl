@@ -16,4 +16,12 @@ package frc.robot;
  * constants are needed, to reduce verbosity.
  */
 public final class Constants {
+    public static class Swerve {
+        public final double kWheelRadius = 0.0508;
+        public final int kEncoderResolution = 4096;
+    
+        public final double kModuleMaxAngularVelocity = Math.PI;
+        public final double kModuleMaxAngularAcceleration = 2 * Math.PI; // radians per second squared
+        public final double kTwoPi = 2 * Math.PI;
+    }
 }

@@ -47,7 +47,7 @@ public class SwerveDrivetrain extends SubsystemBase {
 
   public SwerveDrivetrain() {
 
-    pidControl = new PIDController(0, 0, 0);
+    pidControl = new PIDController(1, 0, 0);
     pidControl.enableContinuousInput(0, 360);
     pidControl.setTolerance(10);
   }
