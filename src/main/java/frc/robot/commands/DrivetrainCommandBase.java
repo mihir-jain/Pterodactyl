@@ -16,13 +16,13 @@ import edu.wpi.first.wpilibj2.command.CommandBase;
 public class DrivetrainCommandBase extends CommandBase {
   final SwerveDrivetrain m_subsystem;
   final XboxController controller;
-  final Constants config;
+  //final Constants config;
 
   
   public DrivetrainCommandBase(SwerveDrivetrain subsystem) {
     m_subsystem = subsystem;
     controller = new XboxController(0);
-    config = 
+    //config = 
     addRequirements(subsystem);
   }
 

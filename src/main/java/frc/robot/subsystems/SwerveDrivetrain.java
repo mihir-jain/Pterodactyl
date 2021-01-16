@@ -12,6 +12,7 @@ import com.revrobotics.CANSparkMax;
 
 import edu.wpi.first.wpilibj.controller.PIDController;
 import edu.wpi.first.wpilibj.geometry.Rotation2d;
+import edu.wpi.first.wpilibj.interfaces.Gyro;
 import edu.wpi.first.wpilibj.kinematics.ChassisSpeeds;
 import edu.wpi.first.wpilibj.kinematics.SwerveDriveKinematics;
 import edu.wpi.first.wpilibj.kinematics.SwerveModuleState;
@@ -36,7 +37,7 @@ public class SwerveDrivetrain extends SubsystemBase {
   private AbsoluteEncoder backLeftEncoder;
   private AbsoluteEncoder backRightEncoder;
   private SwerveDriveKinematics kinematics;
-  private AHRS m_gyro;
+  private Gyro m_gyro;
 
   private double _x;
   private double _y;
